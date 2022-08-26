@@ -1,0 +1,348 @@
+/*ANIMACIONES
+-------------------------------------------------- */
+@keyframes bounce-in-top {
+    0% {
+        transform: translateY(-500px);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        transform: translateY(-65px);
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        transform: translateY(-28px);
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        transform: translateY(-8px);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes bounce-in-fwd {
+    0% {
+        transform: scale(0);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        transform: scale(0.7);
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        transform: scale(0.84);
+        animation-timing-function: ease-in;
+    }
+
+    89% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        transform: scale(0.95);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes bounce-in-bottom {
+    0% {
+        transform: translateY(500px);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        transform: translateY(65px);
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        transform: translateY(28px);
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        transform: translateY(8px);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+}
+
+/*ANIMACIÓN BACKGROUND BODY*/
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+
+
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #2980b9 url('../../img/background.png') repeat 0 0;
+	animation: 10s linear 0s normal none infinite animate;
+}
+
+/*SECCIÓN PANTALLA DIVIDIDA
+-------------------------------------------------- */
+.sec_pantalla_dividida {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor_img_lugar {
+    max-width: 350px;
+    max-height: 360px;
+    width: 100%;
+    height: 100%;
+    animation: bounce-in-bottom 3.1s both;
+    border-top: 3px solid rgb(31, 49, 67);
+    border-right: 3px solid rgb(31, 49, 67);
+    border-bottom: 3px solid rgb(31, 49, 67);
+}
+
+.contenedor_descripcion {
+    max-width: 350px;
+    max-height: 360px;
+    width: 100%;
+    height: 100%;
+    background: rgb(91,179,120);
+    background: linear-gradient(0deg, rgb(96, 146, 200) 0%, rgba(132,190,250,1) 100%);
+    padding: 1rem;
+    animation: bounce-in-top 3.1s both;
+    border-top: 3px solid rgb(31, 49, 67);
+    border-left: 3px solid rgb(31, 49, 67);
+    border-bottom: 3px solid rgb(31, 49, 67);
+}
+
+.estilos_descripcion {
+    width: 100%;
+}
+
+.descripcion {
+    color: rgb(31, 49, 67);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.tit_negro {
+    color: rgb(31, 49, 67);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.tit_blanco {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    animation: bounce-in-top 3.1s both;
+}
+
+/*Botones Redes Sociales*/
+.btn-social {
+    border-radius: 30%;
+    display: inline-flex;
+    width: 1.85rem;
+    height: 1.85rem;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: transparent;
+    animation: bounce-in-fwd 3.1s both;
+  }
+
+  .btn-social:hover {
+    color: #fff;
+    border-color: #fff;
+    background: #1F3143;
+  }
+
+
+/* --------------------------------------------------
+MEDIA QUERY
+-------------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+    /*SECCIÓN PANTALLA DIVIDIDA
+    -------------------------------------------------- */
+    .contenedor_img_lugar {
+        max-width: 300px;
+        max-height: 310px;
+    }
+    
+    .contenedor_descripcion {
+        max-width: 300px;
+        max-height: 310px;
+    }
+    
+    .descripcion {
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    
+    .tit_negro {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    
+    .tit_blanco {
+        font-size: 0.7rem;
+        font-weight: 700;
+        margin-bottom: 1.4rem;
+    }
+    
+    /*Botones Redes Sociales*/
+    .btn-social {
+        width: 1.65rem;
+        height: 1.65rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /*SECCIÓN PANTALLA DIVIDIDA
+    -------------------------------------------------- */
+    .sec_pantalla_dividida {
+        flex-direction: column;
+    }
+
+    .contenedor_img_lugar {
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 50%;
+        border:none;
+        animation: none;
+    }
+
+    .contenedor_descripcion {
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 50%;
+        border:none;
+        animation: none;
+        padding: 1rem;
+    }
+
+    .estilos_descripcion {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tit_negro {
+        font-size: 1.4rem;
+        animation: bounce-in-fwd 0.8s both;
+    }
+
+    .tit_blanco {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+        animation: bounce-in-top 2.1s both;
+    }
+
+    .descripcion {    
+        font-size: 0.8rem;
+        animation: bounce-in-top 2.1s both;
+    }
+
+    /*Botones Redes Sociales*/
+    .btn-social {
+        animation: bounce-in-top 2.1s both;
+    }
+}
